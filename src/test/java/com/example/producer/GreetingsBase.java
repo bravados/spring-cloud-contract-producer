@@ -1,6 +1,6 @@
-package com.example.jms;
+package com.example.producer;
 
-import com.example.jms.controllers.GreetingsController;
+import com.example.producer.controllers.GreetingsController;
 import io.restassured.module.webtestclient.RestAssuredWebTestClient;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Autowired;

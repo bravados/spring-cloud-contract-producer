@@ -1,19 +1,30 @@
-package com.example.jms.dtos;
+package com.example.producer.dtos;
 
 public class Greeting {
-    private final long id;
-    private final String content;
+    private String name;
+    private String message;
 
-    public Greeting(long id, String content) {
-        this.id = id;
-        this.content = content;
+    public Greeting() {
     }
 
-    public long getId() {
-        return id;
+    public Greeting(String name, String message) {
+        this.name = name;
+        this.message = message;
     }
 
-    public String getContent() {
-        return content;
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

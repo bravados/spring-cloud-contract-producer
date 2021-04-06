@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>org.example.jms</groupId>
+    <groupId>org.example.producer</groupId>
     <artifactId>spring-cloud-contract-producer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -20,6 +20,7 @@
         <spring-cloud-release.version>2020.0.2</spring-cloud-release.version>
         <spring-cloud-contract.version>3.0.2</spring-cloud-contract.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -74,7 +75,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <testFramework>JUNIT5</testFramework>
-                    <packageWithBaseClasses>com.example</packageWithBaseClasses>
+                    <packageWithBaseClasses>com.example.producer</packageWithBaseClasses>
                     <testMode>WEBTESTCLIENT</testMode>
                 </configuration>
             </plugin>
